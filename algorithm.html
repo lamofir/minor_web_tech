@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lamofir - algorithm</title>
+    <link rel="stylesheet" href="./static/styles/main.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="page home" style="background-color: darkslategray;">
+            <p><a href="index.html" style="color:antiquewhite;">home</a></p>
+        </div>
+        <div class="page lamofir" style="font-size: 36px; color:antiquewhite">
+            <p>lamofir</p>
+        </div>
+        <div class="page homework" style="background-color: antiquewhite;"><a href="./homework1.html"
+                style="color:darkslategrey;">homeworks</a></div>
+    </div>
+    <div>
+        <div class="leftbar">
+            <a href="./homework1.html" style="color:darkslategrey">Изменяем кириллицу на латиницу по клику</a>
+            <a href="./DOM.html" style="color:darkslategrey">DOM_JS. Считываем информацию из DOM</a>
+            <a href="./algorithm.html" style="color:darkslategrey"><b>Решение алгоритмической задачи</b></a>
+
+        </div>
+        <div class="main" align="center">
+            <table align="center" border="0" width="700px" height="300"
+                style="background-color: antiquewhite; color:darkslategray;">
+                <tr>
+                    <td>
+                        <h1 align="center">Проверка места в плацкартном вагоне</h1>
+                    </td>
+                </tr>
+                <td align="center"><label for="seatNumber">Введите номер места:</label>
+                    <input type="text" id="seatNumber">
+
+                    <button onclick="checkSeat()"
+                        style="background-color: darkslategray; padding: 10px; margin: 10px; color:antiquewhite; font-size: large;">Проверить</button>
+                </td>
+                <tr>
+                    <td>
+                        <p
+                            style="background-color: darkslategray; padding: 10px; margin: 10px; color:antiquewhite; font-size: large;">
+                            Результат: <span id="result"></span>
+                    </td>
+                    </p>
+                </tr>
+
+                <script src="./static/scripts/train.js"></script>
+
+                <script>
+                    function checkSeat() {
+                        var seatNumber = parseInt(document.getElementById("seatNumber").value);
+
+                        if (isNaN(seatNumber)) {
+                            document.getElementById("result").innerHTML = "Пожалуйста, введите числовое значение.";
+                        } else {
+                            var result = checkSeatType(seatNumber);
+                            document.getElementById("result").innerHTML = result;
+                        }
+                    }
+                </script>
+            </table>
+        </div>
+        <div class="prefoot">
+            <div class="footer" style="text-align: center;">
+                <a href="mailto:abkhalla@edu.hse.ru">abkhalla@edu.hse.ru</a> <br><br>
+                <a href="tel:+79774387649">+7(977)438-76-49</a> <br><br>
+                <a href="https://t.me/lamofir"><img
+                        src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/512px-Telegram_logo.svg.png'
+                        style="width: 20px;"> telegram</a>
+            </div>
+        </div>
+</body>
+
+
+
+</html>
