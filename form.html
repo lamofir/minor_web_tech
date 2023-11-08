@@ -28,7 +28,7 @@
         </div>
         <div class="main">
             <h1 align="left"style="color:darkslategrey">Чтобы связаться со мной, заполните форму ниже</h1><br><br>
-            <form action="https://www.bing.com/search?" method="get">
+            <form action="https://bing.com" method="get">
                 <label>
                     ФИО <br>
                     <input type="text" name="name" value="Иванов Иван Иванович">
@@ -45,8 +45,6 @@
                     Возраст<br>
                     <input type="number" name="age" value="20">
                 </label> <br><br>
-                <label>Дата заполнения <br>
-                <input id="date" type="date" value="2023-11-08" /> </label><br><br>
 
                 <fieldset style="width: 150px; text-align: center;">
                     <legend style="text-align: left;">Пол</legend>
@@ -86,6 +84,9 @@
                         <option value="private">Частное лицо</option>
                     </select>
                 </label><br><br>
+                <label>Дата обращения:<br>
+                    <input type="date"  value="2023-11-08" min="2018-01-01" max="2025-12-31" />
+                </label><br><br>
 
                 <label>Пароль: <br>
                     <input type="password" name="password"><br>
@@ -93,8 +94,8 @@
                 <input type="hidden" name="date" value="8.11.2023">
                 <input type="hidden" name="time" value="13:30:51">
 
-                <br><button type="submit">Отправить</button> <br><br>
-            
+                <br><input type="submit"> <br><br>
+            </form>
             </form>
         </div>
     </div>
