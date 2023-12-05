@@ -1,0 +1,12 @@
+.main {
+    text-align: center;
+}
+
+.main-page {
+    display:inline-block;
+    width: 350px;
+    padding:3em;
+    text-align: center;
+    border-radius: 5em;
+    background-color: antiquewhite;
+}

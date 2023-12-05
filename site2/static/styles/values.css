@@ -1,0 +1,98 @@
+.marks {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5em;
+    padding-right: 5em;
+    
+}
+
+.marks a {
+    text-decoration: none;
+    color:white;
+    opacity:0.8;
+    background-color: darkorange;
+    padding:0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 1em;
+    font-size: 1.5em;
+}
+.marks a:hover {
+    opacity:1;
+}
+
+.marks2 {
+    display: flex;
+    justify-content: center;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.marks2 a {
+    text-decoration: none;
+    color:white;
+    opacity:0.8;
+    background-color: darkorange;
+    padding:0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 1em;
+    font-size: 1.5em;
+}
+.marks2 a:hover {
+    opacity:1;
+}
+
+.rules {
+    display: grid;
+    grid-template-columns:1fr 1fr   
+    padding:2em;
+}
+
+.rule {
+    grid-column: 1/2;
+}
+.rule a {
+    padding: 1em;
+}
+
+.right {
+    padding:3em;
+    grid-column: 2/3;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.rule-desc {
+    grid-column: 1/4;
+    font-size: 1.7em;
+    padding:1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.foto-desc{
+    text-align: center;
+}
+  
+@media (max-width:1200px) {
+    .rules {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .rule {
+        grid-column: 1/2;
+        padding: 1em;
+    }
+    
+    .right {
+        padding: 3em;
+        grid-column: 1/2;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    
+}

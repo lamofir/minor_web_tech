@@ -1,0 +1,132 @@
+
+
+.navbar {
+    width:100%;
+    height: 5em;
+    background-color:white;
+    margin-bottom: 2em;
+    box-shadow: 0 1em 1em rgba(0,0,0,.05);
+}
+
+.navbar-brand img {
+    width: 390px;
+}
+.navbar .container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container a{
+    width: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-wrap: nowrap;
+}
+
+.navbar-wrapped {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-right: 1em;
+    width: auto;
+    padding-left: 1em;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+}
+
+.navbar-menu li{
+    display: inline-block;
+    margin: 1em;
+    padding-right: 1em;
+    font-size: 16;
+}
+
+.buy {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 1em;
+    padding: 1em;
+    background-color: cadetblue;
+    border-radius: 2em;
+    
+    color:white;
+    font-weight: bold;
+    text-wrap:nowrap;
+    font-size: 1.2em;
+    font-family: calibri;
+}
+
+.buy:hover {
+    background-color: darkcyan;
+}
+
+.navbar-menu a{
+    text-decoration: none;
+    color:black;
+    opacity: 0.6;
+    transition: all .1s ease-in-out;
+}
+.navbar-menu a:hover{
+    opacity: 1;
+}
+
+@media  (max-width: 1000px) {
+    .navbar-wrapped {
+        background-color: white;
+        width:100%;
+    }
+    .navbar-brand  {
+        margin-right: -250px;
+    }
+    .navbar-brand img {
+        object-fit: cover;
+    }
+    .navbar-menu li {
+        padding-right: 0em;
+        margin:0em;
+        font-size: 12;
+    } 
+    .navbar {
+        width: 100%;
+    }   
+}
+@media (max-width: 666px) {
+    .buy {
+        display: inline-block;
+        text-decoration: none;
+        margin-left: 0em;
+        padding: 0em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-weight: bold;
+        text-wrap:wrap;
+        font-size: 1em;
+        font-family: calibri;
+        background-color: white;
+        color:cadetblue;
+    }
+    .buy:hover {
+        background-color: white;
+        color:darkcyan;
+    }
+    .navbar-wrapped {
+        padding-left: 0px;
+    }
+
+    .navbar-brand img {
+        margin-right: 65px;
+        margin-left: -15px;
+
+        width: 260px;
+    }
+    .navbar {
+        width: 100%;
+        min-width: max-content;
+    }
+}
