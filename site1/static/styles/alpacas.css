@@ -1,0 +1,22 @@
+body {
+    margin: 0px;
+    padding: 0%;
+    background-color: black;
+}
+
+div {
+    background-color: black;
+    text-align: center;
+    height:740px;    
+}
+img {
+    margin-top: 10%;
+}
+a {
+    padding:10px;
+    margin:15px;
+    color:darkslategrey;
+    background-color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+}   
