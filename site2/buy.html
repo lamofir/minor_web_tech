@@ -1,116 +1,168 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Магазин</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" rel="stylesheet">
-</head>
-    <body>
 
-<div class="container">
-       <!--начало уникального содержания страницы-->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" rel="stylesheet">
+    <link rel="stylesheet" href="./static/styles/navbar.css">
+    <link rel="stylesheet" href="./static/styles/main.css">
+</head>
+
+<body>
+    <div class="navbar" style="padding-right: 0em; margin-right:0em;">
+        <div class="navig" style="width:100%">
+            <a href="./index.html" class="navbar-brand"><img src="./static/images/taposhka-logo.png"
+                    style="margin-bottom: 0.7em;" alt="logo"></a>
+
+            <div class="navbar-wrapped" style="margin-right: 0em;">
+                <ul class="navbar-menu">
+                    <li><a href="./values.html">Наши ценности</a></li>
+                    <li><a href="./contact-us.html">Связаться</a></li>
+                </ul>
+                <a class="buy" href="./buy.html">КУПИТЬ ТАПОШКИ</a>
+                <style>
+                    .buy {
+                        margin-bottom: 0.8em; padding:0.9em; background-color:coral;
+                    }
+                    @media (max-width:666px) {
+                        .buy {
+                            display: inline-block;
+                            text-decoration: none;
+                            margin-left: 0em;
+                            padding: 0em;
+                            padding-top: 1em;
+                            padding-bottom: 1em;
+                            font-weight: bold;
+                            text-wrap: wrap;
+                            font-size: 1em;
+                            font-family: calibri;
+                            background-color: white;
+                            color: darkcyan;
+                        }
+                    }
+                </style>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+
         <div class="card-body">
-            <h5 class="card-title text-center">Магазин</h5>
+            <h1 class="card-title text-center">Тапошки</h1> <br>
             <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
                 <input name="q" type="hidden" value="search">
-                <ul class="d-flex flex-row justify-content-around flex-wrap bg-light" id="node_for_insert">
-                <!--начало генерируемого фрагмента кода -->
-                
-        <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
-        <img style="width: 180px" class="align-self-center" src="../../images/uso_001.jpg">
-        <h5 class="card-title">Товар 1</h5>
-        <p class="card-text">Описание 1. Цена 100 р.</p>
-        <input type="hidden" name="vendor_code" value="111">
-        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
-        </li>
-                
-        <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
-        <img style="width: 180px" class="align-self-center" src="../../images/uso_002.jpg">
-        <h5 class="card-title">Товар 2</h5>
-        <p class="card-text">Описание 2. Цена 200 р.</p>
-        <input type="hidden" name="vendor_code" value="222">
-        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
-        </li>
-                
-        <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
-        <img style="width: 180px" class="align-self-center" src="https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/uso_003.jpg">
-        <h5 class="card-title">Товар 3</h5>
-        <p class="card-text">Описание 3. Цена 300 р.</p>
-        <input type="hidden" name="vendor_code" value="333">
-        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
-        </li>
-                
-        <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
-        <img style="width: 180px" class="align-self-center" src="https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/uso_004.jpg">
-        <h5 class="card-title">Товар 4</h5>
-        <p class="card-text">Описание 4. Цена 400 р.</p>
-        <input type="hidden" name="vendor_code" value="444e">
-        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
-        </li>
-                
-        <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
-        <img style="width: 180px" class="align-self-center" src="https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/uso_005.jpg">
-        <h5 class="card-title">Товар 5</h5>
-        <p class="card-text">Описание 6. Цена 400 р.</p>
-        <input type="hidden" name="vendor_code" value="4445e">
-        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
-        </li>
-                
-        <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
-        <img style="width: 180px" class="align-self-center" src="https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/1_1.png">
-        <h5 class="card-title">Товар 6</h5>
-        <p class="card-text">Описание 6. Цена 400 р.</p>
-        <input type="hidden" name="vendor_code" value="4446e">
-        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
-        </li>
-                
-        <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
-        <img style="width: 180px" class="align-self-center" src="https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/1_2.png">
-        <h5 class="card-title">Товар 7</h5>
-        <p class="card-text">Описание 7. Цена 700 р.</p>
-        <input type="hidden" name="vendor_code" value="4447e">
-        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
-        </li>
-                
-        <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
-        <img style="width: 180px" class="align-self-center" src="https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/1_3.png">
-        <h5 class="card-title">Товар 8</h5>
-        <p class="card-text">Описание 8. Цена 800 р.</p>
-        <input type="hidden" name="vendor_code" value="4448e">
-        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
-        </li>
-                
-        <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
-        <img style="width: 180px" class="align-self-center" src="https://raw.githubusercontent.com/vmarshirov/g06u28/main/images/1_4.png">
-        <h5 class="card-title">Товар 9</h5>
-        <p class="card-text">Описание 9. Цена 400 р.</p>
-        <input type="hidden" name="vendor_code" value="444e">
-        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
-        </li>
+                <ul class="d-flex flex-row justify-content-around flex-wrap bg-light" id="node_for_insert"
+                    style="padding: 1em;">
+
+
+                    <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
+                        <img style="width: 180px" class="align-self-center"
+                            src="https://www.partybell.com/images/product/large/BS-806500.jpg">
+                        <h5 class="card-title">Тапошки "Лохматый йети"</h5>
+                        <p class="card-text">Отлично подойдут для вечеринки. Цена 400: р.</p>
+                        <input type="hidden" name="vendor_code" value="111">
+                        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+                    </li>
+
+                    <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
+                        <img style="width: 180px" class="align-self-center"
+                            src="http://cdn01.ru/files/users/images/a7/e0/a7e004ccc3d584459c0749e16a3776fe.jpg">
+                        <h5 class="card-title">Веселые тапошки</h5>
+                        <p class="card-text">Отлично поднимают настроение :). Цена: 300 р.</p>
+                        <input type="hidden" name="vendor_code" value="222">
+                        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+                    </li>
+
+                    <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
+                        <img style="width: 180px" class="align-self-center"
+                            src="https://ph0.qna.center/storage/photos/dthjxrf/1294781.jpg">
+                        <h5 class="card-title">Элегантные тапошки</h5>
+                        <p class="card-text">Вы будете неотразимы! Цена: 500 р.</p>
+                        <input type="hidden" name="vendor_code" value="333">
+                        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+                    </li>
+
+                    <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
+                        <img style="width: 180px" class="align-self-center"
+                            src="https://avatars.mds.yandex.net/get-mpic/4591438/img_id5941110245500463830.jpeg/orig">
+                        <h5 class="card-title">Тёплые тапошки</h5>
+                        <p class="card-text">Ножки надо держать в тепле!. Цена: 600 р.</p>
+                        <input type="hidden" name="vendor_code" value="444e">
+                        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+                    </li>
+
+                    <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
+                        <img style="width: 180px" class="align-self-center"
+                            src="https://novyyurengoy.specins.ru/upload/iblock/b02/bbb3ki15ue6q4ljacs6xxyaev2e0npoj/63af59df_cbb3_11e8_81cf_00155d000409_93e6e43c_56ee_11eb_82b7_00155d000409.jpg">
+                        <h5 class="card-title">Демисезонные тапошки</h5>
+                        <p class="card-text">Самое то для нашего климата. Цена: 400 р.</p>
+                        <input type="hidden" name="vendor_code" value="4445e">
+                        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+                    </li>
+
+                    <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
+                        <img style="width: 180px" class="align-self-center"
+                            src="https://footwearnews.com/wp-content/uploads/2019/05/lightning-crocs.jpg?w=1024&h=683&crop=1">
+                        <h5 class="card-title">Молниеносные тапошки</h5>
+                        <p class="card-text">Почувствуй себя гонщиком на пляже!. Цена: 400 р.</p>
+                        <input type="hidden" name="vendor_code" value="4446e">
+                        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+                    </li>
+
+                    <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
+                        <img style="width: 180px" class="align-self-center"
+                            src="https://content.podarki.ru/goods-images/8a8466e7-ba34-4a14-8d26-e7b48afe337e.jpg">
+                        <h5 class="card-title">Тапошки "Инопланетянин"</h5>
+                        <p class="card-text">А-а-а! У вас на ногах пришельцы! Цена: 700 р.</p>
+                        <input type="hidden" name="vendor_code" value="4447e">
+                        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+                    </li>
+
+                    <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
+                        <img style="width: 180px" class="align-self-center"
+                            src="https://i.pinimg.com/736x/42/ea/b9/42eab9a3c219e0cb111cdafb974136cd--funny-slippers-funny-gifts.jpg">
+                        <h5 class="card-title">Тапошки "Модница"</h5>
+                        <p class="card-text">Хватит тратить деньки на педикюр. Цена: 800 р.</p>
+                        <input type="hidden" name="vendor_code" value="4448e">
+                        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+                    </li>
+
+                    <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
+                        <img style="width: 180px" class="align-self-center"
+                            src="https://cdn1.ozone.ru/s3/multimedia-l/6004065393.jpg">
+                        <h5 class="card-title">Тапошки "Зимний сад"</h5>
+                        <p class="card-text">Комфорт, тепло и функционал. Цена: 500 р.</p>
+                        <input type="hidden" name="vendor_code" value="444e">
+                        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+                    </li>
+
+                    <li style="width: 210px" class="d-flex flex-column m-1 p-1 border bg-body">
+                        <img style="width: 180px" class="align-self-center"
+                            src="./static/images/taposhka-logo-crop.png">
+                        <h5 class="card-title">Тапошки "Альпака"</h5>
+                        <p class="card-text">Лимитированная коллекция. Цена: 5000 р.</p>
+                        <input type="hidden" name="vendor_code" value="444e">
+                        <p class="card-text">Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+                    </li>
+
                 </ul>
-                <input class="btn btn-primary" type="Submit" value="В корзину">
+                <input class="btn btn-primary" type="Submit" value="В корзину" style="margin-left: 45%;">
             </form>
+            <br>
         </div>
-        <!--окончание уникального содержания страницы-->
-</div>
-<script src="../js/0650_api.js"></script>
-<!--
-https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data
-https://rapidapi.com/category/Weather
-https://rapidapi.com/collection/list-of-free-apis
-https://rapidapi.com/weatherapi/api/weatherapi-com/
-https://rapidapi.com/weatherapi/api/weatherapi-com/
-github
-g00u00@outlook.com
-https://rapidapi.com/weatherapi/api/weatherapi-com/pricing
-https://rapidapi.com/apishub/api/yahoo-weather5/
-https://rapidapi.com/solutionsbynotnull/api/live-metal-prices/
--->
-    
+
+    </div>
+    <script src="./static/scripts/js.js"></script>
+
+
 
 
 </body>
+
 </html>
