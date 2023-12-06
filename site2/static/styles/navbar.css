@@ -11,14 +11,14 @@
 .navbar-brand img {
     width: 390px;
 }
-.navbar .container {
+.navbar .navig {
     height: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar .container a{
+.navbar .navig a{
     width: auto;
     padding-left: 1em;
     padding-right: 1em;
@@ -64,6 +64,7 @@
 
 .buy:hover {
     background-color: darkcyan;
+    color:white;
 }
 
 .navbar-menu a{
