@@ -47,7 +47,7 @@
 
 .rules {
     display: grid;
-    grid-template-columns:1fr 1fr   
+    grid-template-columns:1fr 1fr;   
     padding:2em;
 }
 
@@ -93,6 +93,8 @@
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
+    .marks {
+        font-size: 0.8em;;
+    }
     
 }
